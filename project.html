@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Doc</title>
+    <style>
+        
+*{
+    margin: 0;
+    padding: 0;
+}
+.welcome{
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(rgba(255, 255, 255, 0.2),rgba(255, 255, 255, 0.2));
+}
+.navbar{
+    display: flex;
+    justify-content:space-between ;
+    align-items: center;
+}
+.logo{
+    color: aliceblue;
+    font-size: 45px;
+    padding-top:15px;
+    padding-left: 25px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.content {
+    font-size: 23px;
+    padding-right: 20px;
+    padding-top: 15px;
+    font-family: monospace;
+    
+}
+.content a{
+    padding-right:20px;
+    text-decoration: none;
+    color: white;
+}
+.content a:hover{
+    color: rgb(146, 146, 234);
+}
+.backVideo{
+    position: absolute;
+    right: 0;
+    bottom: 0 ;
+    z-index: -1;
+}
+@media (min-aspect-ratio:16/9){
+    .backVideo{
+        width: 100%;
+        height: auto;
+    }
+}
+@media (max-aspect-ratio:16/9){
+    .backVideo{
+        width: auto;
+        height: 100%;
+    }
+}
+    </style>
+</head>
+<body>
+    <section class="welcome">
+        <nav class="navbar">
+            <div class="logo">
+                <h6>C H A R G E</h6>
+            </div>
+           <div class="content">
+                <a href="project.html">Home</a>
+                <a href="about.html" target="">About us</a>
+           </div>
+        </nav>
+        <video autoplay muted loop class="backVideo">
+            <source src="BATTERY.mov"> 
+        </video>
+       
+    </section>
+</body>
+</html>
